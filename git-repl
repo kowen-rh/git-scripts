@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# A simple read-eval-print loop (REPL) for working with `git`.
+
+while true ; do
+  printf "git: "
+  IFS= read -r input
+  eval "git ${input:=status}"
+done

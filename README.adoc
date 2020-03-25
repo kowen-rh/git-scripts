@@ -1,0 +1,31 @@
+= Git scripts
+:repo-name: robin-owen/git-scripts
+
+== Introduction
+
+This repository contains various scripts for working with `git`.
+
+== Installation
+
+To install a script, clone this repository and create a copy of the desired script in your `$PATH`:
+
+[subs="+quotes,attributes"]
+----
+$ git clone git@github.com:{repo-name}
+$ mkdir -p ~/bin
+$ cp _<path_to_script>_ ~/bin
+----
+
+[NOTE]
+====
+In most modern Linux distributions, the **~/bin** directory is automatically added to your `$PATH`.
+====
+
+== Using the scripts
+
+These scripts can be run as `git` commands once they are in your `$PATH`.
+For example, to run the `git-ls-branches` script as a `git` command:
+
+----
+$ git ls-branches
+----
